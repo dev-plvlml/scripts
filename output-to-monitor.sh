@@ -9,7 +9,7 @@ case $MONITOR in
     ;;
   VGA | HDMI )
     if (xrandr | grep '\-0' | grep 'connected' > /dev/null); then
-      xrandr --output $MONITOR-0 --auto --right-of LVDS $OPTIONS
+        xrandr --output $MONITOR-0 --right-of LVDS --auto $OPTIONS
     fi
     ;;
 esac

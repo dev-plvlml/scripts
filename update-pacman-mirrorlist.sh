@@ -1,1 +1,1 @@
-sudo reflector --verbose -l 50 --sort rate --save /etc/pacman.d/mirrorlist
+sudo reflector --verbose --protocol http --latest 50 --sort rate --save /etc/pacman.d/mirrorlist
